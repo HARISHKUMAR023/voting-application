@@ -1,0 +1,17 @@
+{
+  "name": "block",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Harish Ragav and Harishkumar ",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "node": "^19.1.0",
+    "uuid": "^9.0.0"
+  }
+}
