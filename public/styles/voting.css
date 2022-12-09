@@ -79,8 +79,8 @@ h3 {
     position: absolute;
     top: 0;
     left: 0;
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 0;
+    width: 0;
     background: #c9ded6;
     border-radius: 50%;
 }
@@ -274,6 +274,11 @@ h3 {
     100% {
         bottom: 100%;
     }
+}
+
+textarea:focus-visible {
+    outline-color: #1af507;
+
 }
 
 footer {
