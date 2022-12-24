@@ -10,6 +10,7 @@
   "author": "Harish Ragav and Harishkumar ",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.1",
     "crypto-js": "^4.1.1",
     "node": "^19.1.0",
     "uuid": "^9.0.0"

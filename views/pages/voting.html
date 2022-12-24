@@ -16,13 +16,13 @@
 <body>
     <div class="login-box">
         <h2>Vote Here</h2>
-        <form action="#" method="#">
+        <form action="/voter" method="POST">
             <div class="user-box">
-                <input type="text" name="" required="">
+                <input type="text" name="name" required="">
                 <label>Name</label>
             </div>
             <div class="user-box">
-                <input type="password" name="" required="">
+                <input type="text" name="voterid" required="">
                 <label>Vote Number</label>
             </div>
 
@@ -52,19 +52,24 @@
                 padding-left: 25px;">
                     <input type="tex1" name="options" />
                     <span class="radio">4.</span>
-                    <span>Namesla Aruna S</span>
+                    <span> Aruna S</span>
                 </label>
-                <textarea name="textarea" id="" cols="30" rows="2" style="resize: none;"></textarea>
+                <!-- <input  name="voterid" type="text"> -->
+                <textarea name="nominee" id="" cols="30" rows="2" style="resize: none;"></textarea>
 
-            </div>
+            
             <a href="/thank">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-                Submit
+                <button type="submit" style="    background: #00000000;
+                padding-border: 0px;
+                padding: 0px;
+                border: none;
+                color: white;">Submit</button>
             </a>
-
+        </div>
 
         </form>
         <footer>
