@@ -10,6 +10,15 @@ html {
     box-sizing: inherit;
 }
 
+.btnsub {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
 body {
 
     background-image: url("/img/p.jpg");
