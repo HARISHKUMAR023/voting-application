@@ -15,20 +15,28 @@
 
 <body>
     <div class="login-box">
-        <h2>Vote Here</h2>
+        <h2 style="
+        
+        padding-top: 90px;
+    ">Vote Here</h2>
         <form action="/voter" method="POST">
+
             <div class="user-box">
                 <input type="text" name="name" required="">
                 <label>Name</label>
             </div>
             <div class="user-box">
                 <input type="text" name="voterid" required="">
-                <label>Vote Number</label>
+                <label>Vote ID</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="voterid" required="">
+                <label>Department</label>
             </div>
 
 
             <div class="swappy-radios" role="radiogroup" aria-labelledby="swappy-radios-label">
-                <h3 id="swappy-radios-label">Select an name</h3>
+                <h3 id="swappy-radios-label">Select a Nominee</h3>
                 <label style="
                 padding-left: 25px;">
                     <input type="text" name="options" checked />
@@ -55,20 +63,26 @@
                     <span> Aruna S</span>
                 </label>
                 <!-- <input  name="voterid" type="text"> -->
-                <textarea name="nominee" id="" cols="30" rows="2" style="resize: none;"></textarea>
+                <!--<textarea name="nominee" id="" cols="30" rows="2" style="resize: none;"></textarea>-->
 
 
-                <a type="submit">
-                    <button type="submit" class="btnsub">Submit</button>
 
-                </a>
+
             </div>
+            <div class="user-box">
+                <input type="password" placeholder="Enter the Nominee " name="nominee" required="">
+
+            </div>
+            <a type="submit">
+                <button type="submit" class="btnsub">Submit</button>
+
+            </a>
 
         </form>
 
         <footer>
-            <h5>Made by Mca Sona</h5>
-            <h5 class="copyright">&copy; Copyright 2023 by- MCA SONA</h5>
+            <h3>Made by Mca Sona</h3>
+            <h4 class="copyright">&copy; Copyright 2023 by- MCA SONA</h4>
         </footer>
     </div>
     <!-- ========== Start footer ========== -->
