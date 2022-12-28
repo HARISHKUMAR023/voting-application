@@ -7,7 +7,7 @@
     "start": "nodemon main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Harish Ragav and Harishkumar ",
+  "author": "MCA ",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.1",
