@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>result</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/result.css">
 </head>
 
 <body>
@@ -21,66 +24,106 @@
 
 
                         <% if(voting.nominee==3){ %>
-                            <h3>
+                            <h6 class="alert alert-success">
                                 The <%=voting.name %> is voted to the Divya dharshini G S is <%=voting.nominee.length %>
                                         vote is
                                         Recorded
-                            </h3>
+                            </h6>
                             <% v1=v1+1 %>
 
 
                                 <% } %>
                                     <% if(voting.nominee==1){ %>
-                                        <h3>
+                                        <h6 class="alert alert-success">
                                             The <%=voting.name %> is voted to the Akshaya D is <%=voting.nominee.length
                                                     %> vote is
                                                     Recorded
 
-                                        </h3>
+                                        </h6>
                                         <% v2=v2+1 %>
 
                                             <% } %>
                                                 <% if(voting.nominee==2){ %>
-                                                    <h3>
+                                                    <h6 class="alert alert-success">
                                                         The <%=voting.name %> is voted to the Karthikeyan P C is
                                                             <%=voting.nominee.length %>
                                                                 vote is Recorded
-                                                    </h3>
+                                                    </h6>
                                                     <% v3=v3+1 %>
                                                         <% } %>
                                                             <% if(voting.nominee==4){ %>
-                                                                <h3>
+                                                                <h6 class="alert alert-success">
                                                                     The <%=voting.name %> is voted to the Aruna S is
                                                                         <%=voting.nominee.length %>
                                                                             vote is Recorded
-                                                                </h3>
+                                                                </h6>
                                                                 <% v4=v4+1 %>
                                                                     <% } %>
 
                                                                         <% } %>
 
-                                                                            <hr>
+
+                                                                            <div>
+
+                                                                                <hr>
 
 
-                                                                            <p>
-                                                                                Divya dharshini G S got this vote
-                                                                                <%=v1%>
-                                                                            </p>
+                                                                                <p>
+                                                                                    1 -> Divya dharshini G S got this
+                                                                                    vote
+                                                                                    <%=v1%>
+                                                                                </p>
 
-                                                                            <p>
-                                                                                Akshaya D got this vote <%=v2%>
-                                                                            </p>
-                                                                            <p>
-                                                                                Karthikeyan P C got this vote <%=v3%>
-                                                                            </p>
-                                                                            <p>
-                                                                                Aruna S got this vote <%=v4%>
-                                                                            </p>
-
-
+                                                                                <p>
+                                                                                    2 -> Akshaya D got this vote <%=v2%>
+                                                                                </p>
+                                                                                <p>
+                                                                                    3 -> Karthikeyan P C got this vote
+                                                                                    <%=v3%>
+                                                                                </p>
+                                                                                <p>
+                                                                                    4 -> Aruna S got this vote <%=v4%>
+                                                                                </p>
 
                                                                             </div>
 
+
+                                                                            <% let highest_votes=Math.max(v1, v2, v3,v4)
+                                                                                %>
+                                                                                <% let winner %>
+                                                                                    <% if(highest_votes==v1){ %>
+                                                                                        <h2 class="alert alert-warning">
+                                                                                            Person 1 winner
+
+                                                                                        </h2>
+
+                                                                                        <% } %>
+                                                                                            <% if(highest_votes==v2){%>
+                                                                                                <h2
+                                                                                                    class="alert alert-warning">
+                                                                                                    Person 2 winner
+
+                                                                                                </h2>
+                                                                                                <% } %>
+                                                                                                    <%
+                                                                                                        if(highest_votes==v3){%>
+                                                                                                        <h2
+                                                                                                            class="alert alert-warning">
+                                                                                                            Person 3
+                                                                                                            winner
+
+                                                                                                        </h2>
+                                                                                                        <% } %>
+                                                                                                            <%
+                                                                                                                if(highest_votes==v4){%>
+                                                                                                                <h2
+                                                                                                                    class="alert alert-warning">
+                                                                                                                    Person
+                                                                                                                    4
+                                                                                                                    winner
+
+                                                                                                                </h2>
+                                                                                                                <% } %>
 
 
 
