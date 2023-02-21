@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -129,4 +130,94 @@
 
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>result</title>
+</head>
+
+<body>
+
+
+    <% let v1=0 %>
+        <% let v2=0 %>
+            <% let v3=0 %>
+                <% let v4=0 %>
+                    <% for (const voting of vote){ %>
+
+
+
+
+                        <% if(voting.nominee==3){ %>
+                            <h3>
+                                The <%=voting.name %> is voted to the Divya dharshini G S is <%=voting.nominee.length %>
+                                        vote is
+                                        Recorded
+                            </h3>
+                            <% v1=v1+1 %>
+
+
+                                <% } %>
+                                    <% if(voting.nominee==1){ %>
+                                        <h3>
+                                            The <%=voting.name %> is voted to the Akshaya D is <%=voting.nominee.length
+                                                    %> vote is
+                                                    Recorded
+
+                                        </h3>
+                                        <% v2=v2+1 %>
+
+                                            <% } %>
+                                                <% if(voting.nominee==2){ %>
+                                                    <h3>
+                                                        The <%=voting.name %> is voted to the Karthikeyan P C is
+                                                            <%=voting.nominee.length %>
+                                                                vote is Recorded
+                                                    </h3>
+                                                    <% v3=v3+1 %>
+                                                        <% } %>
+                                                            <% if(voting.nominee==4){ %>
+                                                                <h3>
+                                                                    The <%=voting.name %> is voted to the Aruna S is
+                                                                        <%=voting.nominee.length %>
+                                                                            vote is Recorded
+                                                                </h3>
+                                                                <% v4=v4+1 %>
+                                                                    <% } %>
+
+                                                                        <% } %>
+
+                                                                            <hr>
+
+
+                                                                            <p>
+                                                                                Divya dharshini G S got this vote
+                                                                                <%=v1%>
+                                                                            </p>
+
+                                                                            <p>
+                                                                                Akshaya D got this vote <%=v2%>
+                                                                            </p>
+                                                                            <p>
+                                                                                Karthikeyan P C got this vote <%=v3%>
+                                                                            </p>
+                                                                            <p>
+                                                                                Aruna S got this vote <%=v4%>
+                                                                            </p>
+
+
+
+                                                                            </div>
+
+
+
+
+</body>
+
+>>>>>>> b457938317b040bfbf8cff09706b589f23fe1e95
 </html>
